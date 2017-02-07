@@ -6,9 +6,56 @@
 </description>
     <link>http://alihaberfield.com/</link>
     <atom:link href="http://alihaberfield.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2017 23:18:49 +0100</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2017 23:18:49 +0100</lastBuildDate>
+    <pubDate>Tue, 07 Feb 2017 19:55:11 +0100</pubDate>
+    <lastBuildDate>Tue, 07 Feb 2017 19:55:11 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Give production terminal sessions a unique background colour</title>
+        <description>&lt;p&gt;About six months after I started my current job, the first one I’ve had that involves regular contact with production servers and live databases, I spotted this great hint-disguised-as-a-cautionary-tale from &lt;a href=&quot;http://twitter.com/honeststatuspage&quot;&gt;@HonestStatusPage&lt;/a&gt;: 
+&lt;img src=&quot;/assets/terminal_colour/terminal_tweet.jpg&quot; alt=&quot;Being positive first, know that our production shells now have a red background for easy visual recognition. Now, about your data...&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before my current job, I’d been working mostly on a freelance basis on mostly front-end-ish projects. My work involved a lot of files, a lot of source control, and only local servers &amp;amp; databases. In my new role, closer to the metal of the production servers, I was living with the quiet haunting fear of mistaking a production terminal session for development or staging, and doing something absent-minded, with &lt;a href=&quot;https://twitter.com/gitlabstatus/status/826591961444384768&quot;&gt;catastrophic results&lt;/a&gt;. I was careful, but I still worried.&lt;/p&gt;
+
+&lt;p&gt;Obviously, giving each server environment a clear visual cue in the form of a background colour was a great idea to implement BEFORE any disasters occured. I decided to set up an orange background for my staging environment, and a red one for production. It turned out to be straightforward &amp;amp; I’ve been glad for it ever since.&lt;/p&gt;
+
+&lt;h3 id=&quot;give-different-environments-their-own-terminal-background-colours&quot;&gt;Give different environments their own Terminal background colours&lt;/h3&gt;
+
+&lt;p&gt;1) Create two new profiles in Terminal &amp;gt; Preferences &amp;gt; Profiles by clicking the + button at the bottom of the profile list. Give each one a name and a background colour. I chose “Production” and “Staging”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/terminal_colour/custom_profiles.jpg&quot; alt=&quot;Shows the Terminal profile editor with a list of profile names. Arrows point towards the ones named Production and Staging&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2) To use one of your new profiles right away, type &lt;code class=&quot;highlighter-rouge&quot;&gt;tabc profile_name&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;tabc Production&lt;/code&gt; should now turn the background of the window red. &lt;code class=&quot;highlighter-rouge&quot;&gt;tabc Staging&lt;/code&gt; should turn it orange. Typing just &lt;code class=&quot;highlighter-rouge&quot;&gt;tabc&lt;/code&gt; will reset it to the default.&lt;/p&gt;
+
+&lt;p&gt;But you don’t want to have to do this manually each time you SSH into Production- a better idea is to set this up in an alias you will use to do your logins, so that it’s automatic.&lt;/p&gt;
+
+&lt;p&gt;3) Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; to create aliases to set the terminal profile by name, run the usual SSH command for that server, and switch back to the default terminal profile when the session has ended:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;sublime ~/.bash_profile
+
+Add these lines the file: 
+
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ssh_staging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;tabc Staging; ssh secret@secret.staging.com -p 123456; tabc&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ssh_production&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;tabc Production; ssh secret@secret.production.com -p 654321; tabc&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;4) Reload your bash_profile either by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bash_profile&lt;/code&gt; or by closing &amp;amp; reopening the Terminal tab.&lt;/p&gt;
+
+&lt;p&gt;5) Type &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh_staging&lt;/code&gt;: You should now have an orange terminal window. Exit your SSH session. You should be back to your default terminal window colour.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/terminal_colour/echo.jpg&quot; alt=&quot;Command prompt shows &#39;echo &amp;quot;I am a distinct colour that is less likely to be mistaken for a local environment&amp;quot;&#39;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m now a whole lot less worried about distracted terminal commands than I once was, because I have a strong visual cue of which environment I’m in.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Feb 2017 00:00:00 +0100</pubDate>
+        <link>http://alihaberfield.com/tech/2017/02/07/give-terminal-sessions-a-different-background-color.html</link>
+        <guid isPermaLink="true">http://alihaberfield.com/tech/2017/02/07/give-terminal-sessions-a-different-background-color.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Notes from the Three Capes Track</title>
