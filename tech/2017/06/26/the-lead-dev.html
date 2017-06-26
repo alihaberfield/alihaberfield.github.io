@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Lead Dev</title>
+  <meta name="description" content="I got to attend the June 2017 conference Lead Dev in London, and was assigned a guide through the scholars and guides program. It was two days of talks about...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://alihaberfield.com/tech/2017/06/26/the-lead-dev.html">
+  <link rel="alternate" type="application/rss+xml" title="Ali Haberfield" href="http://alihaberfield.com/feed.xml">
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+
+    <div class="site-badge">
+    	<a class="site-title" href="/">Ali Haberfield</a><br/>
+    	<a href="mailto:'just-write-hello-here@the-obvious-domain'?subject=Hello Ali">hello@alihaberfield.com</a>
+    	<ul class="social-media-list">
+    		
+    			<li>
+	<a href="http://github.com/alihaberfield" title="github">
+	<span class="icon icon--github">
+
+	<svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+
+	</span>
+	<span class="social-icon--title u-visuallyhidden">github</span>
+	</a>
+</li>
+
+    		
+    			<li>
+	<a href="http://www.twitter.com/alihaberfield" title="twitter">
+	<span class="icon icon--twitter">
+
+	<svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+
+	</span>
+	<span class="social-icon--title u-visuallyhidden">twitter</span>
+	</a>
+</li>
+
+    		
+    			<li>
+	<a href="https://www.linkedin.com/in/ali-haberfield-4b705620" title="linkedin">
+	<span class="icon icon--linkedin">
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+	</span>
+	<span class="social-icon--title u-visuallyhidden">linkedin</span>
+	</a>
+</li>
+
+    		
+    			<li>
+	<a href="http://stackoverflow.com/users/2945922/ali-h" title="stackoverflow">
+	<span class="icon icon--stackoverflow">
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.658 14.577v-4.27h1.423V16H1.23v-5.693H2.65v4.27h10.006zm-8.583-1.423h7.16V11.73h-7.16v1.424zm.173-3.235l6.987 1.465.3-1.38L4.55 8.54l-.302 1.38zm.906-3.365l6.47 3.02.602-1.295-6.47-3.02-.602 1.295zm1.81-3.19l5.478 4.57.906-1.078-5.477-4.57-.905 1.077zM10.502 0L9.338.863l4.27 5.735 1.164-.862L10.5 0z"/></svg>
+	</span>
+	<span class="social-icon--title u-visuallyhidden">stackoverflow</span>
+	</a>
+</li>
+
+    		
+    			<li>
+	<a href="http://www.ravelry.com/people/alihaberfield" title="ravelry">
+	<span class="icon icon--ravelry">
+
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="97.191px" height="97.191px" viewBox="0 0 97.191 97.191" style="enable-background:new 0 0 97.191 97.191;" xml:space="preserve">
+<g>
+	<path d="M77.322,11.674c-14.367-7.48-28.414-5.783-42.628,0.835c-2.147,1.001-2.945,2.02-3.787,3.606   c-1.933,3.648-3.082,7.101-3.763,10.019c-4.013,4.828-6.894,10.646-8.227,17.041c-1.986,3.411-3.749,7.885-4.396,13.54   c-0.153,1.456-0.109,1.504-0.109,1.504S7.768,57.377,0,53.14c1.709,2.757,11.647,6.124,14.495,7.167   c0.329,18.64,12.211,24.92,12.211,24.92s-2.121-3.251-2.491-3.83c-6.247-11.362-5.173-19.775-5.173-19.775   c0.133,0.024,0.281,0.052,0.436,0.08c4.524,16.563,19.56,28.728,37.415,28.728c1.137,0,2.261-0.051,3.373-0.148   c2.66,0.275,5.233,0.081,7.631-0.742c1.305-0.444,2.625-1.211,3.85-2.082c13.312-7.397,19.13-15.553,23.34-28.019   c0.996-3.068,1.541-6.721,1.879-9.915C98.622,33.895,91.104,18.853,77.322,11.674z M20.395,54.117   c0.872-3.265,2.534-7.456,5.654-10.482c0.338,9.109,3.001,17.089,3.001,17.089l-7.865-1.293   C20.798,57.702,20.533,55.928,20.395,54.117z M26.331,30.95c-0.237,2.345-0.14,3.752-0.14,3.752   c-0.625,0.482-1.914,1.529-3.421,3.193C23.718,35.443,24.912,33.117,26.331,30.95z M21.915,62.22   c2.821,0.629,6.431,1.487,8.171,1.746c0,0,5.208,14.587,20.585,23.612c0.156,0.068,0.313,0.133,0.471,0.197   C37.289,85.561,25.995,75.479,21.915,62.22z M73.275,84.313c-2.743,0.887-6.855,1.556-12.292,0.662   c-17.281-4.376-24.199-20.44-24.199-20.44c7.253,0.155,9.932-0.049,14.791-0.739c7.494-1.067,15.021-3.101,21.845-6.275   c2.25-1.047,2.043-3.672,1.799-5.649c-0.422-2.426-2.084-2.319-4.043-0.884C55.617,62.113,35.154,61.162,35.154,61.162   s-3.589-6.08-5.106-21.017c7.859-6.709,15.771-11.321,31.963-9.986c0.041-1.206,0.566-5.119-3.879-5.309   c-17.767-2.092-27.7,6.353-27.7,6.353c0.427-3.119,1.082-5.554,2.084-7.478c6.479-5.847,15.021-9.409,24.374-9.409   c20.19,0,36.617,16.58,36.617,36.96C93.508,65.712,85.26,78.233,73.275,84.313z"/>
+</g>
+</svg>
+	</span>
+	<span class="social-icon--title u-visuallyhidden">ravelry</span>
+	</a>
+</li>
+
+    		
+    			<li>
+	<a href="https://www.instagram.com/alihaberfield/" title="instagram">
+	<span class="icon icon--instagram">
+
+	<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="100" height="100" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" id="svg2" inkscape:version="0.48.4 r9939" sodipodi:docname="instagram-logo-black-png.svg">
+  <title id="title2997">Instagram icon</title>
+  <defs id="defs18"/>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1600" inkscape:window-height="844" id="namedview16" showgrid="false" inkscape:showpageshadow="false" inkscape:zoom="1" inkscape:cx="75.986979" inkscape:cy="46.746849" inkscape:window-x="-4" inkscape:window-y="-4" inkscape:window-maximized="1" inkscape:current-layer="svg2"/>
+  <metadata id="metadata4">
+Created by potrace 1.12, written by Peter Selinger 2001-2015
+<rdf:RDF>
+  <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Instagram icon</dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g transform="matrix(0.01880253,0,0,-0.01877464,-8.09169,88.053468)" id="g6" style="fill:#000000;stroke:none">
+    <path d="m 1288,4123 -3,-508 -48,-3 c -27,-2 -55,2 -63,9 -12,10 -14,90 -14,500 0,555 10,502 -90,471 l -55,-18 -5,-479 -5,-480 -53,-3 c -31,-2 -60,2 -68,9 -12,10 -14,82 -14,435 0,390 -1,424 -17,424 -9,0 -60,-44 -114,-98 -86,-87 -103,-111 -147,-203 -84,-172 -85,-176 -89,-571 l -5,-348 671,0 c 369,0 671,4 671,8 0,13 119,107 191,150 87,53 188,95 295,123 131,34 340,33 475,-3 160,-43 317,-124 436,-225 l 62,-53 666,0 667,0 -4,353 c -4,329 -6,357 -27,427 -42,142 -93,224 -215,346 -122,121 -203,172 -346,216 l -75,23 -1197,3 -1198,3 -2,-508 -3,-508 -48,-3 c -27,-2 -55,2 -63,9 -12,10 -14,91 -14,510 l 0,499 -75,0 -75,0 -2,-507 z m 2872,122 c 17,-9 39,-33 50,-55 18,-36 20,-59 20,-277 0,-344 11,-333 -329,-333 -258,0 -289,7 -322,72 -19,37 -20,55 -17,289 l 3,251 37,34 38,34 245,0 c 201,0 251,-3 275,-15 z" id="path10" inkscape:connector-curvature="0"/>
+    <path d="m 2445,3353 c -352,-49 -638,-331 -695,-686 -17,-103 -8,-270 20,-367 39,-137 92,-223 210,-340 117,-118 193,-167 312,-205 468,-148 948,112 1069,580 27,104 29,300 5,395 -44,171 -98,264 -231,395 -129,129 -240,187 -413,221 -69,13 -207,17 -277,7 z m 220,-248 c 78,-16 234,-90 280,-133 81,-75 147,-183 181,-298 25,-82 22,-218 -5,-304 -76,-241 -306,-413 -551,-413 -90,0 -159,18 -260,66 -195,92 -323,297 -323,517 -1,269 194,506 464,564 84,19 129,19 214,1 z" id="path12" inkscape:connector-curvature="0"/>
+    <path d="m 502,2153 3,-1008 23,-75 C 572,927 623,846 744,724 868,601 951,550 1096,508 l 79,-23 1385,0 1385,0 79,23 c 159,46 270,115 389,242 83,88 151,206 189,330 l 23,75 3,1003 3,1002 -616,0 c -536,0 -615,-2 -615,-15 0,-8 16,-40 36,-70 189,-297 208,-678 50,-994 -162,-322 -460,-529 -823,-571 -292,-34 -630,92 -840,314 -84,88 -131,158 -193,289 -73,151 -94,249 -94,427 0,117 4,162 22,234 26,105 74,219 125,299 20,32 37,64 37,72 0,13 -78,15 -610,15 l -611,0 3,-1007 z" id="path14" inkscape:connector-curvature="0"/>
+  </g>
+</svg>
+	</span>
+	<span class="social-icon--title u-visuallyhidden">instagram</span>
+	</a>
+</li>
+
+    		
+        </ul>
+    </div>
+
+  </div>
+
+<div class="rainbow-rule"></div>
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">The Lead Dev</h1>
+    <p class="post-meta"><time datetime="2017-06-26T00:00:00+02:00" itemprop="datePublished">Jun 26, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+	  <div class="post-excerpt">
+	  <p>I got to attend the June 2017 conference Lead Dev in London, and was assigned a guide through the scholars and guides program. It was two days of talks about what makes great development teams, and how to make good development decisions, full of immediately useful information and guiding principles.</p>
+
+<p>Illustrated with squirrels and ducks from St James’s Park, down the road from the venue.</p>
+
+	  </div>
+
+    <p><img src="/assets/leaddev/daisysquirrel.jpg" alt="A squirrel in a rather confrontational pose, facing the camera with its tail over its head, standing in a field of daisies" /></p>
+
+<p>I’m always excited when I get to go to a tech conference. They’re a nice change of context and medium for the constant task of absorbing new information and keeping track of what’s changing in the field (I program for the web, so “what’s changing” is everything, always). My day-to-day way of doing this is with an infinitely-growing series of browser tabs containing articles &amp; blog posts I might or might not get round to reading. Conferences are a chance to spend some dedicated time listening to people speak eloquently and passionately on their topics, which makes a nice change and often gives new angles of understanding.</p>
+
+<p>What made Lead Dev sound so interesting for me was the content, targeted at people who’ve been ‘promoted’ from developer to lead developer or team lead, and are now charged with solving people problems and strategic problems as much as hands-on technical problems. I’m not myself a lead developer or team lead, but I’ve noticed that what I always find most useful in conference talks is the “how did we make this decision, and what were the consequences?” and “how did our team break apart this problem, and then solve it?” stories. “How to use Hot New Library” and “Meet the hot-shot developer of Amazing Thing” talks are fun, but I’m rarely a user of Amazing Thing or in a position to implement Hot New Library (at least not until it’s aged through the hype cycle a bit). Strategy and problem-solving is always helpful (or, as Pat Kua reminded us on day one: “principles will outlast tools”). A whole tech conference focused on just that stuff sounded fantastic.</p>
+
+<p>A lot of the common themes that echoed between speakers at Lead Dev are things I already believe: empathy and respect are powerful development skills, continuous learning is both essential and challenging, diverse teams are effective teams, and people skills are the hardest and most essential skills of all. Already believing those things in no way reduced the impact of the wisdom that was being shared. I spent two days nodding along, scribbling notes, and in one awkward moment, spilling my tea everywhere because I was so struck by something I heard.</p>
+
+<p>Something I noticed was that a lot of the companies and organisations with substantial vendor presence and/or big groups of employees attending the event are ones that have crossed my radar in the last few years as “good places to work, probably”. These are places that I’ve noticed sponsoring events and programs for underrepresented people in tech, recruiting through community groups like RailsGirls, and places where women I know got technical jobs years ago and are still happily progressing. They’re also places that maintain high-quality technical blogs that I refer to often, and open source projects that I use everyday. Compared to the company presence at other conferences I’ve been to, it felt like a slice of the tech community as I wish it always was.</p>
+
+<p>I got to attend Lead Dev through their fantastic scholars scheme, which assigned me a conference regular as a mentor to help orient me and answer any questions I had, and gave me a chance to meet the other scholars as a motivated &amp; highly engaged sub-set of the huge conference crowd. My mentor was lovely, and being part of the scholars group was a wonderful ice-breaker and meant I never lacked for people to reflect on the talks with.</p>
+
+<p>Below are my notes for some of the talks- not all of them, but the ones where I made notes about things that I’d really like to remember. These mostly aren’t direct quotes, they’re my own interpretations &amp; take-aways- I’ll add links to the talk videos when they’re up.</p>
+
+<p>For another perspective &amp; more detailed notes from these talks, check out Sole’s notes for <a href="https://soledadpenades.com/2017/06/12/notes-from-the-lead-developer-conference-2017-day-1/">Day 1</a> and <a href="https://soledadpenades.com/2017/06/14/notes-from-the-lead-developer-conference-2017-day-2/">Day 2</a>.</p>
+
+<h3 id="some-of-the-talks-day-1">(Some of the) Talks: Day 1</h3>
+
+<p><img src="/assets/leaddev/geese.jpg" alt="Two adult geese and several goslings eating grass" /></p>
+
+<p>The talk that was most timely and valuable for me was <a href="https://www.twitter.com/mariaguitierrez">Maria Guitierrez</a>’s talk about how to structure personal development. I am someone who usually has two dozen browser tabs open, three simultaneous books I’m reading, and an infinite, totally unmanageable list of things I am trying to learn and document at any one time. I’ve been wanting to get better at this, and have collected an also-unmanageably large list of aspirations for how I will do that. “I should write that up in a blog post” is something I often think when I emerge from a bug-hunting code dive with some new knowledge, and then I immediately get distracted by the next thing.</p>
+
+<p>What I found so valuable about Maria’s talk was that the techniques she gave for narrowing the list from an unmanageable infinity to a manageable handful are things I’m pretty sure I can do. The structure she suggests is a full-day annual goal-setting to generate a list of goals, a shorter weekly reflection against the list, and a 5-minute daily reflection on what was learnt today. Limit the content-hosepipe of blog posts, books and podcasts to things that are on the list. A technique she suggested for generating the list is to go through your role description, and do a self-assessment of your level of skill in each area. Focus your energy where it’s needed. The idea that I could (and actually should) put some sort of a boundary on what I am attempting to learn at any given time is both common-sense and a total revelation.</p>
+
+<p>Earlier on the first day, <a href="https://www.twitter.com/adrian">Adrian Howard</a> described the role of manager as an organisational developer, with the team members being the customers of the organisational product. With a vision of servant leadership (“Be Alfred, not Batman”), he shared some really useful active listening tips: reflecting someone’s own words back at them, for example “Can you tell me more about {thing the person said, in their own words}”, asking for stories rather than bounded and leading questions, and distinguishing in notes between an insight on the part of the listener and an observation from the speaker. His book recommendation (which might go onto a future reading list if I decide that building listening skills is something I should focus on), was “Practical Empathy” by Indi Young.</p>
+
+<p><a href="https://twitter.com/anjuan">Anjuan Simmons</a> opened with a delightful insight into a development career as a hero’s journey, in which at some point the hero can take on the role of mentor to a new hero. I really recognise this path for myself right now- I’ve been working as a developer for a while now, and am increasingly looking for opportunities to mentor people at an earlier stage, while still looking for mentorship and guidance from people who’ve gone a few more adventure cycles than me. Anjuan spoke about influence and leadership in the spheres of people, code, customers and scheduling, and shared the profound usefulness of preserving dignity at all costs, especially in situations of conflict.</p>
+
+<p>Release cycles for native mobile apps are a whole different beast than for the web, but <a href="https://twitter.com/catehstn">Cate Huston</a>’s talk was full of relevant insights for any development sphere. Defining and exploring in-depth what the catastrophic failure would be for any app- if it’s a text app, that’s losing text. If it’s a gaming app, it’s losing points or streaks. Users will never return after a catastrophic failure. All teams need to be able to clearly articulate the company priorities, and multiple teams working on the same product need to have their incentives aligned, or they’ll be driven to undermine each other.</p>
+
+<p>Giving and taking feedback is notoriously hard. <a href="https://twitter.com/eacarlson">Erika Carlson</a>’s talk encouraged us to think about why it’s so hard- what’s the fear in giving/receiving feedback? What’s underneath the fear? What opportunities can be gained by pushing past the fear? Breaking  feedback up into the categories affirmative, constructive and passive, she reminded us that feedback is a skill, and skills need to be practised or they won’t develop. There was gem in there about kindness versus niceness- a nice person might avoid giving difficult feedback, but a kind person knows it needs to be done, for the good of everybody. We got some good tips on receiving difficult feedback (say thank you, go away to process it, and reflect and respond once the feelings have subsided a little), and how to give it (be collaborative about how &amp; when is best, be specific, name behaviour rather than personal traits, practise out loud).</p>
+
+<p>Day one ended with drinks, snacks, and bonding with some of the other conference scholars about projects, community, and how our heads were spinning from the number and quality of the talks.</p>
+
+<h3 id="some-of-the-talks-day-2">(Some of the) Talks: Day 2</h3>
+
+<p><img src="/assets/leaddev/binsquirrel.jpg" alt="A squirrel on top of a bin eating something" /></p>
+
+<p>On day two, <a href="https://twitter.com/birgitta410">Birgitta B.</a>’s talk about Agile Documentation was another one that was exactly the right thing for me to hear at exactly the right time. The importance of common understanding versus the constant decay of out-of-date documentation is a very familiar struggle. She gave a few recommendations for what should be documented: things that everybody on the team should understand about the application, things that don’t change very often, things that turn up often in conversation with people outside the team, and things that are complex, hard to change and that need to be explained repeatedly. Documentation can be a way to find and address code smells- describing a complex problem can be a way of exploring that complexity, and identifying if it needs to be addressed. I was really inspired by some of the paper model kits Birgitta shared, as ways of modeling a system while discussing it, and by the strategy she suggested for documenting architecture decisions using <a href="https://github.com/npryce/adr-tools">ADR-tools</a>. This was a great talk about how to have “just enough” documentation, created and updated when needed (and not before), made of maps, how-to’s, history and creative sketches.</p>
+
+<p>Continuing the theme somewhat, <a href="https://twitter.com/roidrage">Mathias Meyer</a> talked about working in diverse distributed teams, and pointed out that written communication &amp; decision-making can also function as accidental documentation. It was cool to see some examples of the principles and tools of open software development that the TravisCI team bake into their incident response, decision-making and team-onboarding, like using Github issues for just about everything (including procurement), and running company culture discussions as both open and opt-in- invitation open, participation invited but not manditory.</p>
+
+<p><a href="https://twitter.com/saleandro">Sabrina</a>’s talk on big rewrites made some valuable points about when to do it: basically, when the cost of not doing it rises to be equal to or greater than the cost of doing it. Explaining when this is to non-technical stakeholders isn’t always easy, so she suggested making the pain of the bloated please-rewrite-me codebase as visible as possible by explaining the impact on feature development time. Before embarking on any big rewrites, hash out the technical approaches with prototypes, and take Fowler’s “strangler” approach to the rewrite for maximum value and flexibility.</p>
+
+<p>As well as the rewrite, there’s always the option of deleting features and code. To know what to delete, Sabrina suggested defining exactly which features support the core value proposition of the product, and flagging everything else to be considered for deletion. As a way to prioritise time, she suggested identifying the current biggest blocker, removing that, and then repeating for as long as necessary or possible. A suggestion that I have written little hearts around in my notebook is that a team can farewell deleted and deprecated features and projects with obituaries or other ceremonies for closure.</p>
+
+<p>Picking up the earlier discussion of mentorship and learning, <a href="https://twitter.com/carlyhasredhair">Carly Robinson</a> spoke from recent experience about mentoring junior developers, and what makes for effective mentorship. Mentorship is a relationship, so solidarity, empathy and fit are important, and it’s one where the goal is for someone to grow within their craft, so craftmanship is also needed. She gave some great structures for discussing expectations, like outlining what is expected in terms of commitment and progress in three, six and twelve months, and sharing how the parties define success for themselves as mentor or mentee. She suggested tracking progress and explicitly acknowledging progress as a way to counteract imposter syndrome, and pointed out that stretch projects need to have a real risk of failure to count as a stretch.</p>
+
+<p>With <a href="https://twitter.com/rkoutnik">Randall Koutnik</a>’s talk we got an interesting perspective on how to describe career progression for a software developer. Rather than years of experience- a metric that only describes someone’s ability to continue to exist- he argued for a career ladder based on the sophistication of a person’s problem skills. The person with the least experience takes a well-described problem with a well-understood solution, and implements it. Someone with a little more experience can break down a big problem into its implementable parts, and someone with a lot of experience can, with deep understanding of business and software context, go and find problems and set the direction of the solution.</p>
+
+<p><a href="https://twitter.com/sjenkinson">Sally Jenkinson</a> gave us an insight into the journey from working as a developer to working as a strategist. This might happen because of a desire for more responsibility, a scope-creep in someone’s role, or their interest in increased reach and impact. It’s a hard move to make: meetings and responsibilities multiply, it can get lonely, and internal and external ‘maker’ snobbery can make moving to a ‘multiplier’ role identity crisis. Still, she argues that it’s a valuable transition to make, as developers can make excellent strategists, translating between business and development teams and having a solid understanding of estimation and problem decomposition. She encourages using developer skills to build prototypes, and working hard on reducing technical jargon in communication with the use of tools like the “Up-goer 5” text editor.</p>
+
+<p><a href="https://twitter.com/crystalmhuff">Crystal Huff</a> ran through the importance of inclusion and working against bias in hiring practises, and <a href="https://twitter.com/jillwetzler">Jill Wetzler</a> continued this discussion with the importance of retaining and advancing diverse teams. Jill told us that trust as leaders must be earned, and a workplace must be safe to be productive. It’s the job of a leader to develop cultural awareness and cultural competency, and to stay aware of things happening in the world that might impact team members who are different to themselves. If something happens that might impact a team member, she recommends inviting but not forcing conversation about it, and letting the impacted person guide the conversation. Since a lack of constructive feedback can hinder advancement, work on the skill of giving good feedback to someone different to yourself, including practising, and accepting that there might be tears. Using structure to give feedback reduces the likelihood of bias leading to different sorts of feedback for different sorts of people, and she recommends checking feedback both from leadership and peers for bias before delivering it- “Would this feedback be given if this person wasn’t X?”. To counteract the tendency of people to seek proteges and offer sponsorship of people like themselves, actively and intentionally seek out people from underrepresented minorities for advancement opportunities. Work constantly to level up your whole team.</p>
+
+<p>The final talk of the second day and the entire conference was another incredibly timely one for me, since I’ve recently done a couple of talks and found them both rewarding and terrifying. <a href="https://twitter.com/lara_hogan">Lara Hogan</a>, author of <a href="https://abookapart.com/products/demystifying-public-speaking">Demistifying Public Speaking</a>, gave a delightfully meta talk in which she continually referenced her own use of the techniques that she was explaining as she spoke. She recommended keeping yourself engaged as a speaker, and therefor engaging your audience, by delighting yourself throughout your talk with things you genuinely like. Pictures and jokes should delight rather than distract or potentially offend. Her biggest advice was to practise, and to solicit feedback- this is advice that I’ve heard before, but her suggestions on how to do it were interesting. I liked the idea of recording yourself speaking and sharing that for feedback with a small number of people so that it doesn’t have to happen in real time- this both makes it easier to fit into people’s schedules and might help me get over my shyness in asking people to watch me speak.</p>
+
+<p>She suggests giving your feedback team specific guidance on what you want feedback on, and if your talk might involve Q&amp;A, practising answering bad, hostile or ridiculous questions, as well as comfortably saying “I don’t know”. It’s important to practise continuing through a failure or a fumble, and to make back-ups of slides and notes so that you can recover from technical failures. Power poses are a good way to build energy right before getting onstage, and once a talk has been given it should be celebrated and rewarded with some sort of ritual of achievement.</p>
+
+<p>My last note from Lara’s talk is “Buy ‘Demistifying Public Speaking’”, but in fact I was lucky enough to win one of the copies being given away as a conference prize! I got it signed by Lara, and am seriously excited to have a copy on hand as I grit my teeth and put myself forward for more opportunities to teach and talk.</p>
+
+<p>After the last talk I wound up at the pub with some scholars and a few other conference attendees, trying to pick highlights from the two days of talks.</p>
+
+<p><img src="/assets/leaddev/egyptiangeese.jpg" alt="Two Egyptian geese eating grass near a patch of daisies" /></p>
+
+  </div>
+
+</article>
+
+<div class="post-navigation">
+  
+    <a href="/tech/2017/02/07/give-terminal-sessions-a-different-background-color.html" class="next-link">Give production terminal sessions a unique background colour</a>
+  
+  
+</div>
+      </div>
+    </div>
+
+    
+<footer class="site-footer">
+	<div id="instafeed"></div>
+
+	<script type="text/javascript" src="/js/instafeed.min.js"></script>
+	<script type="text/javascript" src="/js/feed-embed.js"></script>
+</footer>
+
+
+  </body>
+
+</html>
